@@ -1,3 +1,7 @@
+# 下載專案：
+
+### `git clone https://github.com/hsiehchinghao/todo-list-test-.git`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
