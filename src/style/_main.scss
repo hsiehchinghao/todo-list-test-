@@ -1,0 +1,22 @@
+@use "./abstract" as *;
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 300;
+  color: $wordColor;
+}
+.background {
+  @include flexbox(column, start, center);
+  width: 100svw;
+  height: 100svh;
+  min-height: 600px;
+  background: linear-gradient(to bottom, #e7f1fd 50%, #ecedff 60%);
+  position: relative;
+  .App {
+    @include flexbox(column, space-between, center);
+    width: 90svw;
+  }
+}

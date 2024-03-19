@@ -1,0 +1,14 @@
+@mixin flexbox($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+$wordColor: #7f91b7;
+
+/* bkgd top blue: #edf6ff
+bkgd bottom purple: #ecedff
+bar: #95acfb
+check: #778ddb
+拉桿和叉叉: #c9d3f8 */

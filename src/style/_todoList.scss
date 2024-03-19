@@ -1,0 +1,69 @@
+@use "./abstract" as *;
+.todolist {
+  @include flexbox(column, start, center);
+  width: 100svw;
+  height: 45svh;
+  min-height: 240px;
+  overflow-y: scroll;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #c9d3f8;
+    border-radius: 10px;
+  }
+  > .alert-message {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+.todolost__underline {
+  width: 90svw;
+  height: 1.5px;
+  background-color: $wordColor;
+}
+.sort-switch {
+  @include flexbox(row, end, center);
+  margin-top: 15px;
+  width: 100%;
+  > input[type="checkbox"] {
+    display: none;
+  }
+  > .sort-switch__alert {
+    @include flexbox(row, end, center);
+    cursor: pointer;
+    > span {
+      line-height: 30px;
+      font-size: 20px;
+    }
+    .sort-switch__toggle__unchecked {
+      @include flexbox(row, start, center);
+      width: 60px;
+      height: 30px;
+      padding: 5px;
+      border-radius: 20px;
+      margin-left: 15px;
+      background-color: #fff;
+      position: relative;
+      transition: 0.3s;
+      > .sort-switch__toogle__switch {
+        width: 25px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: #c9d3f8;
+        z-index: 2;
+        transition: 0.3s;
+      }
+    }
+    .sort-switch__toggle__checked {
+      @extend .sort-switch__toggle__unchecked;
+      @include flexbox(row, end, center);
+      background-color: #c9d3f8;
+      > .sort-switch__toogle__switch {
+        background-color: #fff;
+      }
+    }
+  }
+}

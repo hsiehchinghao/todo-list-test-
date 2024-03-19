@@ -1,0 +1,30 @@
+@use "./abstract" as *;
+
+.progress-bar {
+  @include flexbox(row, space-between, center);
+  width: 100%;
+  height: 70px;
+  .progress-bar__percent {
+    font-size: 24px;
+    line-height: 70px;
+    margin-right: 20px;
+  }
+  .progress-bar__bar {
+    flex: 1 1;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    .progress-bar__bar__completed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: #95acfb;
+      z-index: 2;
+      transition: 0.3s;
+    }
+  }
+}
