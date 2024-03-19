@@ -1,6 +1,14 @@
-# 下載專案：
+## 下載專案：
 
 ### `git clone https://github.com/hsiehchinghao/todo-list-test-.git`
+
+## 安裝
+
+### `npm install`
+
+## 啟動
+
+### `npm start`
 
 # Getting Started with Create React App
 
