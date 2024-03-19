@@ -2,11 +2,11 @@
 
 ### `git clone https://github.com/hsiehchinghao/todo-list-test-.git`
 
-## 安裝
+## 安裝：
 
 ### `npm install`
 
-## 啟動
+## 啟動：
 
 ### `npm start`
 
